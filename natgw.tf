@@ -3,6 +3,6 @@ resource "aws_nat_gateway" "nat-gateway" {
   depends_on = [ aws_eip.eip ]
   subnet_id = aws_subnet.public-subnet.id
   tags = {
-    "name" = "nat-gateway"
+    "Name" = "nat-gateway"
   }
 }
